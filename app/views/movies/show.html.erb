@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <div class="col-md-3">
+
+      <p>
+        <strong>Title:</strong>
+        <%= @movie.title %>
+      </p>
+
+      <p>
+        <strong>Image:</strong>
+        <%= image_tag @movie.image_url %>
+      </p>
+  </div>
+
+  <div class="col-md-9">
+      <p>
+        <strong>Description:</strong>
+        <%= @movie.description %>
+      </p>
+
+      <p>
+        <strong>Genre:</strong>
+        <%= @movie.genre %>
+      </p>
+
+      <p>
+        <strong>Year:</strong>
+        <%= @movie.year %>
+      </p>
+
+  </div>
+</div>
+<% if user_signed_in? %>
+<%= link_to 'Edit', edit_movie_path(@movie) %> |
+<%= link_to 'Back', movies_path %>
+<% end %>
