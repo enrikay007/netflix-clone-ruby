@@ -26,7 +26,7 @@ gem 'font-awesome-sass', '~> 5.13.0'
 gem 'image_processing', '~> 1.2'
 
 
-##gem 'searchkick'
+#gem 'searchkick'
 gem 'devise'
 gem "mini_magick"
 gem 'figaro'
