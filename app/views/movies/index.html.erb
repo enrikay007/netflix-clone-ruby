@@ -7,7 +7,7 @@
   <thead>
     <tr>
       <th>Title</th>
-      <th>Image</th>
+     
       <th>Description</th>
       <th>Genre</th>
       <th>Year</th>
@@ -21,7 +21,7 @@
     <% @movies.each do |movie| %>
       <tr>
         <td><%= link_to movie.title, movie %></td>
-        <td><%= link_to image_tag(movie.image.url), movie %></td>
+    
         <td><%= movie.description %></td>
         <td><%= movie.genre %></td>
         <td><%= movie.year %></td>

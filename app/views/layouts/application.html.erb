@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Netflix</title>
+    <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
     <%= render 'layouts/bootstrap'%>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -14,16 +14,11 @@
     <% if request.original_url != root_url %>
     <%= render 'layouts/navbar' %>
     <% end %>
-    
 
-    <% if request.original_url == root_url %>
-   
-    <% end %>
-
-    <% if request.original_url == root_url %>
-    <%= render 'layouts/carousel' %>    
-      
-    <% end %>
+<% if request.original_url == root_url %>
+<%= render 'layouts/front' %>    
+  
+<% end %>
 
     <div class="container-fluid">
       <% flash.each do |name, msg| %>
